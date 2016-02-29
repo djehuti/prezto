@@ -71,9 +71,9 @@ if is-callable 'dircolors'; then
       eval "$(dircolors --sh)"
     fi
 
-    alias ls="${aliases[ls]:-ls} --color=auto"
+    alias ls="${aliases[ls]:-ls} -N --color=auto"
   else
-    alias ls="${aliases[ls]:-ls} -F"
+    alias ls="${aliases[ls]:-ls} -NF"
   fi
 else
   # BSD Core Utilities
